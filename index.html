@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -7,16 +6,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
         <h1>Мужики на терапии</h1>
-        <nav>
-            <a href="#">Об авторе</a> | <a href="#">Архив</a>
-        </nav>
+        <div class="chapter-selector">
+            <select onchange="location = this.value;">
+                <option value="index.html" selected>Глава 1</option>
+                <option value="chapter2.html">Глава 2</option>
+                <option value="chapter3.html">Глава 3</option>
+                </select>
+        </div>
     </header>
 
     <main class="comic-container">
-        <img src="img/chapter1/page0.png" alt="Глава 1 Страница 0">
+            <img src="img/chapter1/page0.png" alt="Глава 1 Страница 0">
 		 <img src="img/chapter1/page01.png" alt="Глава 1 Страница 1">
 		  <img src="img/chapter1/page02.png" alt="Глава 1 Страница 2">
 		   <img src="img/chapter1/page03.png" alt="Глава 1 Страница 3">
@@ -30,12 +32,15 @@
 				   <img src="img/chapter1/page11.png" alt="Глава 1 Страница 11">
 				    <img src="img/chapter1/page12.png" alt="Глава 1 Страница 12">
 					 <img src="img/chapter1/page13.png" alt="Глава 1 Страница 13">
-	
-        </main>
+    </main>
+
+    <nav class="mobile-nav">
+        <a href="#" class="nav-btn disabled">« Назад</a>
+        <a href="chapter2.html" class="nav-btn">Вперед »</a>
+    </nav>
 
     <footer>
-        <p>© 2024 Ваше Имя</p>
+        <p>© 2024 AImanga</p>
     </footer>
-
 </body>
 </html>
