@@ -24,4 +24,40 @@ header, footer {
     width: 100%;      /* Растягивает картинку на всю ширину контейнера */
     height: auto;     /* Сохраняет пропорции при любой высоте */
     display: block;   /* Убирает лишние пробелы снизу */
+
+}
+/* Стили для выпадающего списка */
+.chapter-selector select {
+    background: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    font-size: 16px; /* Важно: минимум 16px, чтобы iPhone не "зумил" экран при нажатии */
+    width: 200px;
+}
+
+/* Нижняя навигация */
+.mobile-nav {
+    position: sticky;
+    bottom: 20px; /* Кнопки "парят" над контентом при скролле или стоят внизу */
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.nav-btn {
+    background-color: #ff4757; /* Яркий цвет для кнопок */
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.nav-btn.disabled {
+    background-color: #555;
+    pointer-events: none;
+    opacity: 0.5;
 }
