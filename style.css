@@ -47,7 +47,7 @@ header, footer {
 }
 
 .nav-btn {
-    background-color: #ff4757; /* Яркий цвет для кнопок */
+    background-color: #555; /* Яркий цвет для кнопок */
     color: white;
     text-decoration: none;
     padding: 15px 30px;
@@ -61,3 +61,4 @@ header, footer {
     pointer-events: none;
     opacity: 0.5;
 }
+
